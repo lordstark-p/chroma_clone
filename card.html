@@ -161,7 +161,10 @@
       <div id="mainCon">
         <div id="headBar" class="flex">
           <h2 id="cartValue">Your Cart ( 3 items ) ₹110,979.00</h2>
-          <button class="checkout" style="width: auto; margin-left: 50px"
+          <button
+            class="checkout"
+            style="width: auto; margin-left: 50px"
+            onclick="openPay()"
             >CHECKOUT</button
           >
         </div>
@@ -226,7 +229,7 @@
               <div class="minFlex">
                 <p>Total price</p> <p id="totalCost">₹73,899.00</p>
               </div>
-              <button class="checkout">CHECKOUT</button>
+              <button class="checkout" onclick="openPay()">CHECKOUT</button>
             </div>
           </div>
         </div>
@@ -315,6 +318,10 @@
       let coupan = document.querySelector("#coupan").value;
       if (coupan == "OFF30") totalCost = (totalCost / 100) * 70;
       cartChange();
+    }
+    function openPay() {
+      localStorage.setItem("totalCost", JSON.stringify(totalCost));
+      window.open("/Address.html", "_self");
     }
     mapCart(testData);
   </script>

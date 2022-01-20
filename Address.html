@@ -186,6 +186,14 @@
       label {
         display: block;
       }
+      #vali {
+        background: #353535;
+        border: none;
+        border-radius: 10px;
+        margin: 2% 0% 2% 0%;
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+      }
       @media screen and (max-width: 1024px) {
         #subDiv {
           flex-direction: column;
@@ -267,6 +275,19 @@
                 /></div>
               </div>
             </div>
+            <div class="card">
+              <h2>GST Information(optional)</h2>
+              <div class="gst"
+                ><label for="gstn">GST Number</label>
+                <input
+                  type="text"
+                  name="gstn"
+                  id="gstn"
+                  placeholder="Enter GST Number"
+                />
+                <button id="vali">VALIDATE GST Number</button></div
+              >
+            </div>
           </div>
           <div id="sideData" class="flexV">
             <div id="paymentDet" class="card">
@@ -282,7 +303,9 @@
               <div class="minFlex">
                 <p>Total price</p> <p id="totalCost">₹73,899.00</p>
               </div>
-              <button class="checkout">CHECKOUT</button>
+              <button class="checkout" onclick="openPay()"
+                >SELECT PAYMENT</button
+              >
             </div>
           </div>
         </div>
@@ -290,6 +313,7 @@
     </main>
   </body>
   <script>
+    let totalCost = JSON.parse(localStorage.getItem("totalCost"));
     // let testData = JSON.parse(localStorage.getItem("cart"))||[]
     let testData = [
       {
@@ -323,11 +347,10 @@
         price: 3999.0,
       },
     ];
-    var totalCost = 0;
     const prTab = document.querySelector("#proTab");
     function mapCart(dta) {
       prTab.innerHTML = null;
-      totalCost = 0;
+
       dta.forEach(({ img, name, pId, price }) => {
         let proCard = document.createElement("div");
         let prdetail = document.createElement("div");
@@ -339,7 +362,6 @@
         proID.innerHTML = `Product Id: ${pId}`;
         let proPrice = document.createElement("p");
         proPrice.innerHTML = `₹ ${price}`;
-        totalCost += price;
         proCard.setAttribute("class", "proCard");
         prdetail.setAttribute("class", "prdetail");
         prdetail.append(h2, proID, proPrice);
@@ -353,5 +375,9 @@
       document.querySelector("#totalCost").innerHTML = `₹${totalCost}`;
     }
     mapCart(testData);
+    function openPay() {
+      localStorage.setItem("totalCost", JSON.stringify(totalCost));
+      window.open("/paytm.html", "_self");
+    }
   </script>
 </html>

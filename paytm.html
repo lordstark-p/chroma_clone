@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-color: #121212;
+      }
+      * {
+        font-family: "Gotham", sans-serif;
+        color: #ffffff;
+        /* font-size: 1.5rem;
+        line-height: 1.3; */
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+      }
+      .flexV {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #cardPro {
+        width: 70%;
+      }
+      #sideData {
+        width: 28%;
+      }
+      .card {
+        border: solid 1px #353535;
+        padding: 5%;
+        width: 90%;
+        margin: 10px 0px 10px 0px;
+
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      }
+      #coupan {
+        width: 100%;
+        border: none;
+        height: 100%;
+        color: black;
+        padding-left: 10px;
+      }
+      #coupan:focus {
+        outline: none;
+      }
+      #apply {
+        border: none;
+        height: 100%;
+        color: black;
+        font-size: 20px;
+      }
+      #promoBox {
+        height: 35px;
+        background: white;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .minFlex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .minFlex > p {
+        margin: 5px 0px 5px 0px;
+      }
+      .checkout {
+        background: #00e9bf;
+        color: #103749;
+        text-align: center;
+        height: 35px;
+        width: 100%;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid #00e9bf;
+        font-weight: 700;
+      }
+      .radDel {
+        margin: 5px 0px 5px 0px;
+      }
+      .radDel > * {
+        margin: 0px 10px 0px 0px;
+      }
+      #headBar {
+        justify-content: center;
+        padding: auto !important;
+        border: solid 1px #353535;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      }
+      #mainCon {
+        width: 95%;
+        margin: auto;
+      }
+      .proCard {
+        border: solid 1px #353535;
+        padding: 5%;
+        width: 90%;
+
+        margin: 10px 0px 10px 0px;
+
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+          rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      }
+      .proCard > img {
+        width: 130px;
+        height: 130px;
+      }
+      .proCard > div {
+        margin-left: 10px;
+      }
+      #sideData {
+        justify-content: flex-start;
+      }
+      #subDiv {
+        align-items: flex-start;
+      }
+      .prdetail > h2 {
+        font-size: 18px;
+      }
+      .del {
+        align-self: flex-start;
+        /* height: 100%; */
+        color: #00e9bf;
+        margin: 10px;
+      }
+      p + p {
+        font-weight: 700;
+      }
+      hr {
+        height: 1px;
+        border: none;
+        width: 90%;
+        background: #353535;
+      }
+      select {
+        color: black;
+        background: white;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      input {
+        color: black;
+        background: white;
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 18px;
+        border: none;
+        /* font-weight: 700; */
+      }
+      option {
+        background-color: #121212;
+        color: white;
+      }
+      .adrForm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+      }
+
+      label {
+        display: block;
+      }
+      #vali {
+        background: #353535;
+        border: none;
+        border-radius: 10px;
+        margin: 2% 0% 2% 0%;
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+      }
+      .controlCard {
+        display: flex;
+        justify-content: space-between;
+      }
+      .controlCard > h2 {
+        margin: 0%;
+      }
+      .controlCard > button {
+        background: none;
+        border: none;
+      }
+
+      .payCard {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2s, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }
+      #payBox1 {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+      #payBox2 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      #payBox3 {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      .off {
+        display: none;
+      }
+      @media screen and (max-width: 1024px) {
+        #subDiv {
+          flex-direction: column;
+        }
+        #cardPro {
+          width: 100%;
+        }
+        #sideData {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="mainCon">
+        <div id="headBar" class="flex">
+          <h2 id="cartValue">Your Cart ( 3 items ) ₹110,979.00</h2>
+          <button class="checkout" style="width: auto; margin-left: 50px"
+            >CHECKOUT</button
+          >
+        </div>
+        <div id="subDiv" class="flex" style="justify-content: space-between">
+          <div id="cardPro" class="flexV">
+            <div class="card">
+              <div class="controlCard">
+                <h2> Gift card /Voucher</h2>
+                <button onclick="openBox('.gst')"
+                  ><i class="fas fa-chevron-up"></i
+                ></button>
+              </div>
+              <div class="gst off" style="margin-top: 20px">
+                <input
+                  type="text"
+                  name="gstn"
+                  id="gstn"
+                  placeholder="Enter Voucher Number"
+                />
+                <button id="vali">VALIDATE Voucher Number</button></div
+              >
+            </div>
+            <div class="card">
+              <div class="controlCard">
+                <h2><i class="far fa-credit-card"></i> Payament</h2>
+                <button onclick="openBox('.creditPay')"
+                  ><i class="fas fa-chevron-up"></i
+                ></button>
+              </div>
+              <div class="creditPay off">
+                <div class="payCard">
+                  <div id="payBox1"
+                    ><label for="Card_no">CREDIT CARD NO</label>
+                    <input
+                      type="text"
+                      name="Card_no"
+                      id="Card_no"
+                      placeholder="**** **** **** **** 1234"
+                  /></div>
+                  <div id="payBox2"
+                    ><label for="EXP">EXP</label>
+                    <input type="text" name="EXP" id="EXP" placeholder="MM/YY"
+                  /></div>
+                  <div id="payBox3"
+                    ><label for="CVV">CVV</label>
+                    <input type="text" name="CVV" id="CVV" placeholder="123"
+                  /></div>
+                </div>
+                <button class="checkout" style="margin: 10px 0px 10px 0px"
+                  ><i class="fas fa-money-check-alt"></i> PAY</button
+                >
+              </div>
+            </div>
+            <!-- kuch bhi -->
+          </div>
+          <div id="sideData" class="flexV">
+            <div id="paymentDet" class="card">
+              <h2> Order Summary</h2>
+              <div class="minFlex">
+                <p>Item total</p> <p id="price">₹73,899.00</p>
+              </div>
+              <div class="minFlex">
+                <p>Delivery cost at <b style="color: #00e9bf">400049</b> </p>
+                <p>Free</p>
+              </div>
+              <hr />
+              <div class="minFlex">
+                <p>Total price</p> <p id="totalCost">₹73,899.00</p>
+              </div>
+              <hr />
+              <p style="text-align: center"
+                >By placing the order you have read & agreed to</p
+              >
+              <p style="text-align: center; color: #00e9bf"
+                >Terms and condition</p
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    // let testData = JSON.parse(localStorage.getItem("cart"))||[]
+    let totalCost = JSON.parse(localStorage.getItem("totalCost"));
+    function openBox(el) {
+      let tempBox = document.querySelector(el);
+      if (tempBox.classList.contains("off")) tempBox.classList.remove("off");
+      else tempBox.classList.add("off");
+    }
+    cartChange();
+    function cartChange() {
+      document.querySelector("#price").innerHTML = `₹${totalCost}`;
+      document.querySelector("#totalCost").innerHTML = `₹${totalCost}`;
+    }
+    // mapCart(testData);
+  </script>
+</html>
