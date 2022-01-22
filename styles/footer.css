@@ -7,16 +7,16 @@
 }
 @media only screen and (min-width: 375px) and (max-width: 768px) {
   #szfotter {
-    display: flex;
-    /* grid-template-columns: repeat(2, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 375px) {
   #szfotter {
-    display: flex;
-    /* width: 100%; */
-    /* grid-template-columns: repeat(1, 1fr); */
+    display: grid;
+    width: 100%;
+     grid-template-columns: repeat(1, 1fr); 
   }
 }
 
@@ -106,16 +106,16 @@ font-size: 22px;
 }
 @media only screen and (min-width: 375px) and (max-width: 768px) {
   #szbottom {
-    display: flex;
-    /* grid-template-columns: repeat(2, 1fr); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 375px) {
   #szbottom {
-    display: flex;
+    display: grid;
     /* width: 100%; */
-    /* grid-template-columns: repeat(1, 1fr); */
+    grid-template-columns: repeat(1, 1fr); *
   }
 }
 #sztext {
