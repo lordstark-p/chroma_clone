@@ -48,16 +48,17 @@ function imgSlide5() {
     );
 }
 
-var arr =  JSON.parse(localStorage.getItem("products")) || [] ;
-function addingItem(){
-  console.log("here")
+var arr = JSON.parse(localStorage.getItem("products")) || [];
+function addingItem() {
+  console.log("here");
 
   var obj = {
-     title :"Apple MacBook Air M1 Chip macOS Big Sur Laptop ",
-     id:"229944",
-     price:"₹83,900.00",
-     image:"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1606585888/Croma%20Assets/Computers%20Peripherals/Laptop/Images/9009479057438.png/mxw_1440,f_auto"
-}
-arr.push(obj);
-localStorage.setItem("products",JSON.stringify(arr));
+    title: "Apple MacBook Air M1 Chip macOS Big Sur Laptop ",
+    id: "229944",
+    price: 83900.0,
+    image:
+      "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1606585888/Croma%20Assets/Computers%20Peripherals/Laptop/Images/9009479057438.png/mxw_1440,f_auto",
+  };
+  arr.push(obj);
+  localStorage.setItem("products", JSON.stringify(arr));
 }

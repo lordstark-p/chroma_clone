@@ -48,16 +48,17 @@ function imgSlide5() {
     );
 }
 
-var arr =  JSON.parse(localStorage.getItem("products")) || [] ;
-function addingItem(){
-  console.log("here")
+var arr = JSON.parse(localStorage.getItem("products")) || [];
+function addingItem() {
+  console.log("here");
 
   var obj = {
-     title :"Vivo V23 Pro 5G (256GB ROM, 12GB RAM, V2132, Stardust Black)",
-     id:"229942",
-     price:"₹43,990.00",
-     image:"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1641445057/Croma%20Assets/Communication/Mobiles/Images/246699_8_k8bhmm.png/mxw_1440,f_auto"
-}
-arr.push(obj);
-localStorage.setItem("products",JSON.stringify(arr));
+    title: "Vivo V23 Pro 5G (256GB ROM, 12GB RAM, V2132, Stardust Black)",
+    id: "229942",
+    price: 43990.0,
+    image:
+      "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1641445057/Croma%20Assets/Communication/Mobiles/Images/246699_8_k8bhmm.png/mxw_1440,f_auto",
+  };
+  arr.push(obj);
+  localStorage.setItem("products", JSON.stringify(arr));
 }

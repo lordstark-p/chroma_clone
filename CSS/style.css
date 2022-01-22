@@ -1,6 +1,9 @@
 body {
   background-color: #121212;
 }
+main {
+  margin-top: 200px;
+}
 * {
   font-family: "Gotham", sans-serif;
   color: #ffffff;
@@ -93,7 +96,6 @@ body {
 #mainCon {
   width: 95%;
   margin: auto;
-  margin-top: 13%;
 }
 .proCard {
   border: solid 1px #353535;
@@ -133,7 +135,7 @@ body {
 p + p {
   font-weight: 700;
 }
-#paymentDet>  hr {
+#paymentDet > hr {
   height: 1px;
   border: none;
   width: 90%;
