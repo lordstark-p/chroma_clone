@@ -13,33 +13,68 @@
   },5000)
 // sliding js  end
 
+var arr =  JSON.parse(localStorage.getItem("products")) || [] ;
 
-// shop by price start js 
-
-// showSlider()
-
-// shop by price end js 
-let arrData = [];
-
-let addCartRaus = () =>{
-   
-  let cartData = {
-    // image:document.getElementsByClassName('imgaeLimitedRaus').src,
-    // title:document.getElementsByClassName('TitleRaus').innertext,
-    // price:document.getElementsByClassName('timeDealeRaus').innertext
+let  addingRau = () => {
+  console.log("here")
+  var newObj = {
+     title : document.getElementById("rscart1").innerText,
+     price : document.getElementById("price1").innerText,
+     image : document.getElementById("img1").src,
+     id:Math.floor(Math.random(12000 -500)*500)
   }
-  console.log("click me")
- let  name = document.getElementById('titlesRaus5').textContent
-  console.log(name)
-
-  
-
-
+  arr.push(newObj);
+  localStorage.setItem("products",JSON.stringify(arr));
+ 
 }
-// addto cart start
 
+let  addingRau1 = () => {
+  console.log("here")
+  var newObj = {
+     title : document.getElementById("title2").innerText,
+     price : document.getElementById("price2").innerText,
+     image : document.getElementById("img2").src,
+     id:Math.floor(Math.random(12000 -500)*500)
+  }
+  arr.push(newObj);
+  localStorage.setItem("products",JSON.stringify(arr));
+  console.log('title:', newObj)
+}
 
-  
-// addto cart end
-
+let  addingRau2 = () => {
+  console.log("here")
+  var newObj = {
+     title : document.getElementById("title3").innerText,
+     price : document.getElementById("price3").innerText,
+     image : document.getElementById("img3").src,
+     id:Math.floor(Math.random(12000 -500)*500)
+  }
+  arr.push(newObj);
+  localStorage.setItem("products",JSON.stringify(arr));
+  console.log('title:', newObj)
+}
+let  addingRau3 = () => {
+  console.log("here")
+  var newObj = {
+     title : document.getElementById("title4").innerText,
+     price : document.getElementById("price4").innerText,
+     image : document.getElementById("img4").src,
+     id:Math.floor(Math.random(12000 -500)*500)
+  }
+  arr.push(newObj);
+  localStorage.setItem("products",JSON.stringify(arr));
+  console.log('title:', newObj)
+}
+let  addingRau4 = () => {
+  console.log("here")
+  var newObj = {
+     title : document.getElementById("title5").innerText,
+     price : document.getElementById("price5").innerText,
+     image : document.getElementById("img5").src,
+     id:Math.floor(Math.random(12000 -500)*500)
+  }
+  arr.push(newObj);
+  localStorage.setItem("products",JSON.stringify(arr));
+  console.log('title:', newObj)
+}
 
