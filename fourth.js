@@ -61,4 +61,10 @@ function addingItem() {
   };
   arr.push(obj);
   localStorage.setItem("products", JSON.stringify(arr));
+  window.location.href = "fourth.html"
 }
+function chgCart() {
+  document.querySelector("#cartValu").innerHTML = arr.length;
+}
+
+chgCart();

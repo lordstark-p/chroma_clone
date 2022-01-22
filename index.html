@@ -2162,8 +2162,14 @@
  
    let container = document.getElementById('container')
  container.innerHTML = navbar();
- 
+//  for count 
 
+ var products = JSON.parse(localStorage.getItem("products")) || [];
+    function chgCart() {
+      document.querySelector("#cartValu").innerHTML = products.length;
+    }
+
+    chgCart();
  </script>
  <!-- footer -->
  <script type="module">
@@ -2174,5 +2180,7 @@
   
   let container = document.getElementById('szcontainer')
   container.innerHTML = footer();
+
+  
   
   </script>

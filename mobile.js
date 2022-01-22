@@ -75,6 +75,10 @@ let  addingRau4 = () => {
   }
   arr.push(newObj);
   localStorage.setItem("products",JSON.stringify(arr));
-  console.log('title:', newObj)
+  window.location.href = "mobile.html";
+}
+function chgCart() {
+  document.querySelector("#cartValu").innerHTML = arr.length;
 }
 
+chgCart();
