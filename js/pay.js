@@ -2,8 +2,14 @@
 var totalCost = JSON.parse(localStorage.getItem("totalCost"));
 function openBox(el) {
   let tempBox = document.querySelector(el);
-  if (tempBox.classList.contains("off")) tempBox.classList.remove("off");
-  else tempBox.classList.add("off");
+  let btn = document.querySelector(el + "Btn");
+  if (tempBox.classList.contains("off")) {
+    btn.classList.add("rotate");
+    tempBox.classList.remove("off");
+  } else {
+    tempBox.classList.add("off");
+    btn.classList.remove("rotate");
+  }
 }
 cartChange();
 function cartChange() {
