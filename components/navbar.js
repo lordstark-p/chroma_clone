@@ -1,7 +1,5 @@
-function navbar()
-
-{
-    return`    <div id="sznavbar">
+function navbar() {
+  return `    <div id="sznavbar">
     <div id="szlocation">
       <div id="szmap">
         <i id="map" class="fas fa-map-marker-alt"></i>
@@ -543,20 +541,18 @@ function navbar()
       <div id="szhr">
         <hr>
       </div>
-      <a href="cart.html"> 
+      <a href="cart.html" style="color: white;
+    text-decoration: none;"> 
       <div id="szcart">
        <i class="fas fa-shopping-cart"></i>
-   
-      
-       
+       <div id="cartValu">5</div>
         <button>CART</button>
-
       </div>
       </a>
 
     </div>
   </div>
- `
+ `;
 }
 
-export default navbar
+export default navbar;
