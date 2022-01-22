@@ -55,7 +55,7 @@ function addingItem() {
   console.log("here");
 
   var obj = {
-    item: document.getElementById("gvtitle").innerText,
+    title: document.getElementById("gvtitle").innerText,
     id: "229941",
     price: 58990.0,
     image:

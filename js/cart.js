@@ -33,8 +33,15 @@ function mapCart(dta) {
   });
   cartChange();
 }
-function delCart(id) {
-  testData = testData.filter(({ id }) => id != id);
+function delCart(noman) {
+  var flage = true;
+  testData = testData.filter(({ id }) => {
+    if (flage && id == noman) {
+      flage = false;
+      return false;
+    }
+    return true;
+  });
   mapCart(testData);
 
   localStorage.setItem("products", JSON.stringify(testData));
