@@ -7,6 +7,7 @@ body {
  #gvddButton{
    width: 6%;
    /* border: 1px solid red; */
+  
  }
  #sznavbar {
   width: 100%;
@@ -21,11 +22,7 @@ body {
    color: white;
    
  }
- #gvCartcount{
-   font-size: 30px;
-   color: white;
-
- }
+ 
  #sznavbar>hr{
   border-color: rgb(53, 53, 53);;
  }
@@ -330,7 +327,9 @@ position: absolute;
    margin-top: 20px;
 
  }
-
+ #szhr>a{
+   text-decoration: none;
+ }
  #szhr>hr {
    height: 40px;
    margin-left: 70px;

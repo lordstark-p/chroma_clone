@@ -12,11 +12,14 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
 />
 <link rel="stylesheet" href="mobile.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
 <style>
     
 </style>
 <body >
+  <div id="container"></div>
     <p id="mobileRaus">Mobile Phone</p>
     <div id="mainRaus">
         <div id="newRaus">
@@ -200,13 +203,13 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     <div class="carouselSamllPhoneRaus" data-flickity='{ "contain": true }'>
        <div class="phomeCellRaus">
            <div class="smallMobileRaus">
-               <img  class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605197456/Croma%20Assets/Communication/Mobiles/Images/8943046950942.png/mxw_1440,s_webp,f_auto" alt="">
+               <img id="img1" class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605197456/Croma%20Assets/Communication/Mobiles/Images/8943046950942.png/mxw_1440,s_webp,f_auto" alt="">
                <!-- <p><i class="far fa-heart"></i></p> -->
                
-               <p class="nokiaPhoneRaus">Nokia 5310 (16MB ROM, 8MB RAM, Black)</p>
-               <p class="mobilePriceRaus" style="font-size: 20px;">₹1,349.00     <strike  class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹1,699.00</strike></p>
+               <p class="nokiaPhoneRaus" id="rscart1">Nokia 5310 (16MB ROM, 8MB RAM, Black)</p>
+               <p class="mobilePriceRaus" style="font-size: 20px;" id="price1">₹1,349.00 </p>
                 
-              <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+              <button class="addToCartRaus" onclick="addingRau()" >Add to Cart</button>
               <br>
               <br>
                <span class="fa fa-star checkedRaus" style="font-size: 20px"></span>
@@ -219,11 +222,12 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
         <!-- 2 div -->
         <div class="phomeCellRaus">
             <div  class="smallMobileRaus">
-                <img  class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605328225/Croma%20Assets/Communication/Mobiles/Images/8944737353758.png/mxw_1440,s_webp,f_auto" alt="">
+                <img id="img2" class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605328225/Croma%20Assets/Communication/Mobiles/Images/8944737353758.png/mxw_1440,s_webp,f_auto" alt="">
             
-                <p class="nokiaPhoneRaus">Nokia 5310 (16MB ROM, 8MB RAM, Black)</p>
-                <p class="mobilePriceRaus" style="font-size: 20px;"></p>₹3,449.00<strike class="strikeRaus"  style="font-size: 14px; color:grey ;margin-left: 10px;">₹3,999.00</strike></p>
-                <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+                <p class="nokiaPhoneRaus" id="title2">Nokia 5310 (16MB ROM, 8MB RAM, Black)</p>
+                <p class="mobilePriceRaus" style="font-size: 20px;" id="price2">₹3,449.00
+                </p >
+                <button class="addToCartRaus" onclick="addingRau1()" >Add to Cart</button>
                 <br>
                 <br>
                  <span class="fa fa-star checkedRaus" style="font-size: 20px"></span>
@@ -237,10 +241,11 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
 
         <div class="phomeCellRaus">
             <div  class="smallMobileRaus">
-                <img  class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1627028637/Croma%20Assets/Communication/Mobiles/Images/236375_frhala.png/mxw_1440,s_webp,f_auto">
-                <p class="nokiaPhoneRaus">IKall K444 (32MB ROM, 32MB RAM, Green)</p>
-                <p class="mobilePriceRaus"  style="font-size: 20px;">₹949.00<strike class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹1,449.00</strike></p>
-              <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+                <img  id="img3"
+                class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1627028637/Croma%20Assets/Communication/Mobiles/Images/236375_frhala.png/mxw_1440,s_webp,f_auto">
+                <p class="nokiaPhoneRaus" id="title3">IKall K444 (32MB ROM, 32MB RAM, Green)</p>
+                <p class="mobilePriceRaus"  style="font-size: 20px;" id="price3">₹949.00</p>
+              <button class="addToCartRaus" onclick="addingRau2()" >Add to Cart</button>
               <br>
               <br>
               <span class="fa fa-star" style="font-size: 20px"></span>
@@ -254,10 +259,10 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
 
         <div class="phomeCellRaus">
             <div  class="smallMobileRaus">
-                <img  class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1627643627/Croma%20Assets/Communication/Mobiles/Images/236380_nw5nel.png/mxw_1440,s_webp,f_auto" alt="">
-                <p class="nokiaPhoneRaus">I KALL K18 (32MB ROM, 0.032GB RAM, Sky Copper)</p>
-                <p class="mobilePriceRaus"  style="font-size: 20px;">₹949.00 <strike class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹1,449.00</strike></p>
-                <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+                <img id="img4" class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1627643627/Croma%20Assets/Communication/Mobiles/Images/236380_nw5nel.png/mxw_1440,s_webp,f_auto" alt="">
+                <p class="nokiaPhoneRaus" id="title4">I KALL K18 (32MB ROM, 0.032GB RAM, Sky Copper)</p>
+                <p class="mobilePriceRaus"  style="font-size: 20px;" id="price4">₹949.00 </p>
+                <button class="addToCartRaus" onclick="addingRau3()" >Add to Cart</button>
                 <br>
                 <br>
                 <span class="fa fa-star" style="font-size: 20px"></span>
@@ -272,10 +277,11 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
         <div class="phomeCellRaus">
             <div  class="smallMobileRaus">
                  
-                <img  class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1628594148/Croma%20Assets/Communication/Mobiles/Images/236390_zwa19q.png/mxw_1440,s_webp,f_auto" alt="">
-                <p class="nokiaPhoneRaus">I KALL K18 (32MB ROM, 0.032GB RAM, K22G Black)</p>
-                <p class="mobilePriceRaus" style="font-size: 20px;">720.00<strike class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹1,099.00</strike></p>
-                <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+                <img id="img5"
+                 class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1628594148/Croma%20Assets/Communication/Mobiles/Images/236390_zwa19q.png/mxw_1440,s_webp,f_auto" alt="">
+                <p class="nokiaPhoneRaus" id="title5">I KALL K18 (32MB ROM, 0.032GB RAM, K22G Black)</p>
+                <p class="mobilePriceRaus" style="font-size: 20px;" id="price5">720.00</p>
+                <button class="addToCartRaus" onclick="addingRau4()" >Add to Cart</button>
                 <br>
                 <br>
                 <span class="fa fa-star" style="font-size: 20px"></span>
@@ -292,7 +298,7 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
                 <img  class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1628594660/Croma%20Assets/Communication/Mobiles/Images/236394_i4mqks.png/mxw_1440,s_webp,f_auto" alt="">
                 <p class="nokiaPhoneRaus">I KALL K18 (32MB ROM, 62GB RAM, Blue)</p>
                 <p class="mobilePriceRaus" style="font-size: 20px;">₹790.00<strike class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹1,299.00</strike></p>
-              <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+              <button class="addToCartRaus" >Add to Cart</button>
               <br>
               <br>
               <span class="fa fa-star" style="font-size: 20px"></span>
@@ -309,7 +315,7 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
                 <p class="nokiaPhoneRaus">I KALL K33 (64MB ROM, 0.032GB RAM, Blue)</p>
                 <p class="mobilePriceRaus" style="font-size: 20px;">₹720.00<strike class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹1,299.00</strike></p>
 
-                <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+                <button class="addToCartRaus" >Add to Cart</button>
                 <br>
                 <br>
                 <span class="fa fa-star" style="font-size: 20px"></span>
@@ -326,7 +332,7 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
                 <img  class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1628595560/Croma%20Assets/Communication/Mobiles/Images/236402_hyndad.png/mxw_1440,s_webp,f_auto" alt="">
                 <p class="nokiaPhoneRaus">I KALL K18 (32MB ROM, 62GB RAM, Blue)</p>
                 <p class="mobilePriceRaus" style="font-size: 20px;">₹720.00<strike class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹1,299.00</strike></p>
-                <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+                <button class="addToCartRaus" >Add to Cart</button>
                 <br>
                 <br>
                 <span class="fa fa-star" style="font-size: 20px"></span>
@@ -343,7 +349,7 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
                 <p class="nokiaPhoneRaus">I KALL K43+ (64MB ROM, 32MB RAM, Blue)</p>
                 <p class="mobilePriceRaus" style="font-size: 20px;">₹690.00     <strike class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹999.00</strike></p>
                
-                <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+                <button class="addToCartRaus" >Add to Cart</button>
                 <br>
                 <br>
                 <span class="fa fa-star" style="font-size: 20px"></span>
@@ -360,7 +366,7 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
                 <img  class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1628597520/Croma%20Assets/Communication/Mobiles/Images/236414_oif5aw.png/mxw_1440,s_webp,f_auto" alt="">
                 <p class="nokiaPhoneRaus">I KALL K51 (64MB ROM, 32MB RAM, Black/Blue)</p>
                 <p class="mobilePriceRaus" style="font-size: 20px;">₹660.00     <strike class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹1,099.00</strike></p>
-              <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+              <button class="addToCartRaus"  >Add to Cart</button>
               <br>
               <br>
               <span class="fa fa-star" style="font-size: 20px"></span>
@@ -377,7 +383,7 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
                 <img  class="imgSmallRaus" src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1628598923/Croma%20Assets/Communication/Mobiles/Images/236423_qgtdiq.png/mxw_1440,s_webp,f_auto" alt="">
                 <p class="nokiaPhoneRaus">I KALL K15 (64MB ROM, 0.032GB RAM, Black/Blue)</p>
                 <p class="mobilePriceRaus" style="font-size: 20px;">₹449.00 <strike class="strikeRaus" style="font-size: 14px; color:grey ;margin-left: 10px;">₹799.00</strike></p>
-                <button class="addToCartRaus"  onclick="addCartRaus()">Add to Cart</button>
+                <button class="addToCartRaus" >Add to Cart</button>
                 <br>
                 <br>
                 <span class="fa fa-star" style="font-size: 20px"></span>
@@ -529,7 +535,7 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
                 >
               </p>
              
-              <button class="btnAddCart" onclick="addCartPopular()">Add to Cart</button>
+              <button class="btnAddCart" >Add to Cart</button>
               <br>
               <br>
               <span class="fa fa-star gvchecked" style="font-size: 20px"></span>
@@ -554,7 +560,7 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
                   >₹29,900.00</strike
                 >
               </p>
-              <button class="btnAddCart" onclick="addCartPopular()">Add to Cart</button>
+              <button class="btnAddCart" >Add to Cart</button>
               <br>
               <br>
               <span class="fa fa-star gvchecked" style="font-size: 20px"></span>
@@ -1003,10 +1009,34 @@ href="https://unpkg.com/flickity@2/dist/flickity.min.css"
 
     <!-- thinking stroe  end-->
 
-
+    <div id="szcontainer"></div>
 
 
 </body>
 </html>
 <script src="mobile.js"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- navbar -->
+<script type="module" >
+ 
+  import navbar from './components/navbar.js';
+ 
+//  console.log("navbar:",navbar)
+ 
+   let container = document.getElementById('container')
+ container.innerHTML = navbar();
+ 
+
+ </script>
+ <!-- footer -->
+ <script type="module">
+
+  import footer from './components/footer.js';
+  
+  // console.log("footer:",footer)
+  
+  let container = document.getElementById('szcontainer')
+  container.innerHTML = footer();
+  
+  </script>
