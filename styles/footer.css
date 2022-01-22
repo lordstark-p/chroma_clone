@@ -1,0 +1,151 @@
+#szfotter{
+    height:2550px;
+    /* border: 1px solid red; */
+    background-color: rgb(18,18,18);
+ color: white;
+ /* display: flex; */
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #szfotter  {
+      display: flex;
+        /* grid-template-columns: repeat(2, 1fr); */
+      }
+    }
+ 
+    @media only screen and (min-width: 0px) and (max-width: 375px) {
+        #szfotter {
+        display: flex;
+        /* width: 100%; */
+        /* grid-template-columns: repeat(1, 1fr); */
+      }
+    }
+
+#szshop{
+    /* border: 1px solid red; */
+    width: 90%;
+    height:300px;
+    margin: auto;
+}
+#szshop>h1{
+  /* margin-left: 50%; */
+  text-align: center;
+  font-size: 40px;
+  padding-top: 10px;
+
+}
+#box{
+    display: flex;
+}
+#box>div{
+    
+    /* border: 1px solid red; */
+    height:200px;
+    width: 30%;
+    margin-left: 5%;
+    
+}
+#box>div>div{
+    display: flex;
+    margin-top: 5%;
+}
+p1{
+    font-size: 20px;
+  
+}
+#box2>div>div{
+    display: flex;
+    margin-top: 5%;
+}
+#box3>div>div{
+    display: flex;
+    margin-top: 5%;
+}
+#tata{
+    /* border: 1px solid red; */
+    height:500px;
+    width: 100%;
+}
+h3{
+    margin-left: 10px;
+    font-size: 30px;
+}
+#tatabox{
+    display: flex;
+}
+#tatabox>div{
+    
+    /* border: 1px solid red; */
+    height:300px;
+    width: 55%;
+    margin-left: 5%;
+   
+    
+}
+#tatabox>div>img{
+    border-radius: 10px;
+    height:300px;
+    width: 100%;
+}
+p{
+    font-size: 25px;
+}
+#szbottom{
+    height:500px;
+    /* border: 1px solid red; */
+    background-color:  rgb(29,29,29);
+ color: white;
+ display: flex;
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #szbottom{
+      display: flex;
+        /* grid-template-columns: repeat(2, 1fr); */
+      }
+    }
+ 
+    @media only screen and (min-width: 0px) and (max-width: 375px) {
+        #szbottom{
+        display: flex;
+        /* width: 100%; */
+        /* grid-template-columns: repeat(1, 1fr); */
+      }
+    }
+#sztext{
+    margin-left: 20px;
+    /* border: 1px solid red; */
+    width: 20%;
+}
+#sztext>i{
+
+    margin-left: 20px;
+    margin-top: 15px;
+      cursor: pointer; 
+      
+}
+#sztext>input 
+{
+    height: 60px;
+    width: 70%;
+    border-radius: 10px;
+}
+#email>placeholder 
+{
+  font-size: 70px;
+}
+#szlink{
+    display: flex;
+}
+#szfront{
+    margin-left: 85px;  
+    margin-top: 10%;
+}
+#szproduct{
+    display: flex;
+   
+}
+#szgroom{
+    margin-left: 30px;
+    margin-top: 10%;
+}
+
+ 
