@@ -564,6 +564,9 @@ img:hover{
 
   @media only screen and (min-width: 375px) and (max-width: 768px) {
 
+    #topbar{
+      margin-top: 0;
+    }
     .carousel-mp{
         margin:auto;
         width: 75%;
@@ -621,6 +624,9 @@ img:hover{
   }
 
   @media only screen and (min-width: 0px) and (max-width: 375px) {
+    #topbar{
+      margin-top: 0;
+    }
     .carousel-cell-hl {
         width: 100%;
         margin-right: 10px;}
