@@ -19,14 +19,13 @@ function navbar()
     </div>
 
     <hr>
-
-
     <!-- //croma -->
     <div id="szlogo">
-      <div id="szlo">
-        <img
-          src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_192,f_auto"
-          alt="Croma Logo">
+    <div id="szlo">
+    
+    <a href="index.html"><img
+    src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://www.croma.com/assets/images/croma_logo_dark.png/mxw_192,f_auto"
+    alt="Croma Logo"></a>
 
       </div>
       <!-- //menu -->
@@ -536,22 +535,24 @@ function navbar()
       <div id="szorder">
         <button>ORDERS </button>
       </div>
+      <a href="signin.html" id = "gvddButton"> 
       <div id="szsign">
-        <button> SIGN IN</button>
-
+        <button > SIGN IN</button>
       </div>
+      </a>
       <div id="szhr">
         <hr>
       </div>
-
+      <a href="cart.html"> 
       <div id="szcart">
-      <a href="cart.html">  <i class="fas fa-shopping-cart"></i></a>
+       <i class="fas fa-shopping-cart"></i>
+   
       
        
         <button>CART</button>
 
       </div>
-
+      </a>
 
     </div>
   </div>
