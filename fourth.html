@@ -17,6 +17,8 @@
     />
     <!-- for linking -->
     <link rel="stylesheet" href="fourth.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
     <!-- for greater font -->
     <link
@@ -36,6 +38,7 @@
     </title>
   </head>
   <body>
+    <div id="container"></div>
     <div id="gvmainBox">
       <div id="gvupperBox">
         <div><a href="">Computers & Tablets</a></div>
@@ -363,14 +366,17 @@
             </h3>
           </div>
           <img
+            style="margin-bottom: 5%"
             src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637759131/Croma%20Assets/CMS/Category%20icon/Final%20icon/jvqga6pxejreylrd3jrd.svg/mxw_1440,f_auto"
             alt=""
           />
-          <span style="margin-left: 1%; font-size: 18px"
+          <span style="margin-left: 1%; font-size: 18px; margin-bottom: 5%"
             >Zip Protection Plan</span
           >
           <hr style="width: 85%; margin-left: 0%" />
-          <h3>Extended warranty plans starting at ₹3199 (Approx ₹267/mo.)</h3>
+          <h3 style="font-size: 22px">
+            Extended warranty plans starting at ₹3199 (Approx ₹267/mo.)
+          </h3>
           <h3 style="font-size: 16px; font-weight: 400">
             Extended protection for your device beyond the manufacturer warranty
             with coverage against all manufacturing defects.
@@ -1804,7 +1810,27 @@
         </div>
       </div>
     </div>
+    <div id="szcontainer"></div>
   </body>
 </html>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="fourth.js"></script>
+
+<!-- navbar -->
+<script type="module">
+  import navbar from "./components/navbar.js";
+
+  console.log("navbar:", navbar);
+
+  let container = document.getElementById("container");
+  container.innerHTML = navbar();
+</script>
+<!-- footer -->
+<script type="module">
+  import footer from "./components/footer.js";
+
+  console.log("footer:", footer);
+
+  let container = document.getElementById("szcontainer");
+  container.innerHTML = footer();
+</script>

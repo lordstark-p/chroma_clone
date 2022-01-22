@@ -60,7 +60,7 @@ function footer()
 </div>
 <!-- fotter text  -->
 
-<div id="fotter text">
+<div id="footertext">
 <p> Launched in 2006, first one-of-its kind large format specialist retail electronics store, Croma, caters to over 12 Million happy customers for all of their multi-brand digital gadgets and home electronics. Since its inception, Croma has become synonymous for all electronics needs, both online & in-store, with a wide product range and tech-savvy staff with a will to help customers throughout their buying journeys.</p>
     <br>
 <P>With a promise of a ‘#Brighter Every Day’ to its customers, Croma offers a world-class ambience and seamless ‘omni-channel’ shopping experience to enjoy the best of both, the online shopping & the offline worlds. By availing Croma’s omni-channel services, as a customer, one can enjoy online shopping and have the product delivered at their doorstep or can avail the pick-up from a Croma store near me service. Customers can also opt for Zip Express delivery service that makes sure to deliver the product at their doorstep within 3 hours in select cities.</P>

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 <link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="./styles/navbar.css">
+<link rel="stylesheet" href="./styles/footer.css">
 
 <link
       rel="stylesheet"
@@ -21,7 +23,7 @@
 </head>
 <body>
 
-
+  <div id="container"></div>
  <!-- links container -->
  <!-- <div class="linksIcon">
   <ul class="links-container">
@@ -2122,12 +2124,35 @@
 <!-- Top Categories in Spotlight starts here -->
 
 
-
+<div id="szcontainer"></div>
 </body>
 </html>
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-<script src="index.js">
+<script src="index.js" >
   
 </script>
+<!-- nabar -->
+<script type="module" >
+ 
+  import navbar from './components/navbar.js';
+ 
+ console.log("navbar:",navbar)
+ 
+   let container = document.getElementById('container')
+ container.innerHTML = navbar();
+ 
+
+ </script>
+ <!-- footer -->
+ <script type="module">
+
+  import footer from './components/footer.js';
+  
+  console.log("footer:",footer)
+  
+  let container = document.getElementById('szcontainer')
+  container.innerHTML = footer();
+  
+  </script>

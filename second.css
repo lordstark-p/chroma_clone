@@ -40,6 +40,7 @@ body {
   margin-top: 10px;
   /* border: 3px solid green; */
   display: flex;
+  margin-bottom: 4%;
 }
 
 /* small boxes */
@@ -407,6 +408,7 @@ input:hover {
   width: 20%;
   height: 45px;
   border-radius: 30px;
+  /* do not remove */
   border: 1px solid #00e9bf;
   margin-left: 20px;
   align-items: center;
@@ -470,7 +472,7 @@ input:hover {
   border-radius: 5px;
   /* counter-increment: carousel-cell; */
   padding: 3%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 500px;
 }
 
@@ -491,13 +493,13 @@ input:hover {
 .carousel {
   margin: auto;
   width: 90%;
-  border: 3px solid red;
+  /* border: 3px solid red; */
   height: 500px;
 }
 
 .popular_products {
   color: white;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   height: 400px;
   margin-top: 0;
   font-size: 18px;

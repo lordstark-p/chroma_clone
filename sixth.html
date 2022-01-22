@@ -17,6 +17,8 @@
     />
     <!-- for linking -->
     <link rel="stylesheet" href="sixth.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
 
     <!-- for greater font -->
     <link
@@ -36,6 +38,7 @@
     </title>
   </head>
   <body>
+    <div id="container"></div>
     <div id="gvmainBox">
       <div id="gvupperBox">
         <div><a href="">Audio & Video</a></div>
@@ -348,8 +351,9 @@
                 >Change</span
               >
             </h3>
-            <h3>
+            <h3 style="margin-bottom: 5%">
               <img
+                style="margin-top: 5%"
                 src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637828519/Croma%20Assets/UI%20Assets/Standard-Delivery-Black-Theme.svg/mxw_1440,f_auto"
                 alt=""
                 width="4%"
@@ -363,6 +367,7 @@
             </h3>
           </div>
           <img
+            style="margin-top: 5%"
             src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637759131/Croma%20Assets/CMS/Category%20icon/Final%20icon/jvqga6pxejreylrd3jrd.svg/mxw_1440,f_auto"
             alt=""
           />
@@ -1771,7 +1776,27 @@
         </div>
       </div>
     </div>
+    <div id="szcontainer"></div>
   </body>
 </html>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="sixth.js"></script>
+
+<!-- navbar -->
+<script type="module">
+  import navbar from "./components/navbar.js";
+
+  console.log("navbar:", navbar);
+
+  let container = document.getElementById("container");
+  container.innerHTML = navbar();
+</script>
+<!-- footer -->
+<script type="module">
+  import footer from "./components/footer.js";
+
+  console.log("footer:", footer);
+
+  let container = document.getElementById("szcontainer");
+  container.innerHTML = footer();
+</script>
