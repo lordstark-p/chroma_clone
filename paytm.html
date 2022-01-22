@@ -11,6 +11,8 @@
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="/CSS/style.css" />
     <style>
       .cirBox {
@@ -38,6 +40,7 @@
     </style>
   </head>
   <body>
+    <header><div id="container"></div></header>
     <main>
       <div id="mainCon">
         <div id="headBar" class="flex" style="justify-content: space-evenly">
@@ -70,7 +73,9 @@
                   id="gstn"
                   placeholder="Enter Voucher Number"
                 />
-                <button id="vali">VALIDATE Voucher Number</button></div
+                <button id="vali" onclick='window.open("/order.html", "_self");'
+                  >VALIDATE Voucher Number</button
+                ></div
               >
             </div>
             <div class="card">
@@ -99,7 +104,10 @@
                     <input type="text" name="CVV" id="CVV" placeholder="123"
                   /></div>
                 </div>
-                <button class="checkout" style="margin: 10px 0px 10px 0px"
+                <button
+                  class="checkout"
+                  style="margin: 10px 0px 10px 0px"
+                  onclick="window.open('/order.html', '_self')"
                   ><i class="fas fa-money-check-alt"></i> PAY</button
                 >
               </div>
@@ -132,6 +140,26 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div id="szcontainer"></div>
+    </footer>
   </body>
   <script src="/js/pay.js"></script>
+  <script type="module">
+    import navbar from "./components/navbar.js";
+
+    //  console.log("navbar:",navbar)
+
+    let container = document.getElementById("container");
+    container.innerHTML = navbar();
+  </script>
+  <!-- footer -->
+  <script type="module">
+    import footer from "./components/footer.js";
+
+    // console.log("footer:",footer)
+
+    let container = document.getElementById("szcontainer");
+    container.innerHTML = footer();
+  </script>
 </html>

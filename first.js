@@ -18,7 +18,6 @@ function imgSlide2() {
     );
 }
 
-
 document.getElementById("gvthumb3gv").addEventListener("click", imgSlide3);
 function imgSlide3() {
   document
@@ -49,20 +48,19 @@ function imgSlide5() {
     );
 }
 
-var arr =  JSON.parse(localStorage.getItem("products")) || [] ;
+var arr = JSON.parse(localStorage.getItem("products")) || [];
 // document.getElementById("gvcart").innerText = arr.length;
 
-function addingItem(){
-  console.log("here")
+function addingItem() {
+  console.log("here");
 
   var obj = {
-     item : document.getElementById("gvtitle").innerText,
-     id:"229941",
-     price:document.getElementById("gvprice6").innerText,
-     image:"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605263642/Croma%20Assets/Communication/Mobiles/Images/8999511228446.png/mxw_1440,f_auto"
+    item: document.getElementById("gvtitle").innerText,
+    id: "229941",
+    price: 58990.0,
+    image:
+      "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605263642/Croma%20Assets/Communication/Mobiles/Images/8999511228446.png/mxw_1440,f_auto",
+  };
+  arr.push(obj);
+  localStorage.setItem("products", JSON.stringify(arr));
 }
-arr.push(obj);
-localStorage.setItem("products",JSON.stringify(arr));
-
-}
-

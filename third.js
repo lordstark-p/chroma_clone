@@ -48,16 +48,17 @@ function imgSlide5() {
     );
 }
 
-var arr =  JSON.parse(localStorage.getItem("products")) || [] ;
-function addingItem(){
-  console.log("here")
+var arr = JSON.parse(localStorage.getItem("products")) || [];
+function addingItem() {
+  console.log("here");
 
   var obj = {
-     title :"OnePlus Nord 2 5G (128GB ROM, 8GB RAM, DN2101, Blue Haze)",
-     id:"229943",
-     price:"₹29,999.00",
-     image:"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1627022121/Croma%20Assets/Communication/Mobiles/Images/240335_6_ospqym.png/mxw_1440,f_auto"
-}
-arr.push(obj);
-localStorage.setItem("products",JSON.stringify(arr));
+    title: "OnePlus Nord 2 5G (128GB ROM, 8GB RAM, DN2101, Blue Haze)",
+    id: "229943",
+    price: 29999.0,
+    image:
+      "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1627022121/Croma%20Assets/Communication/Mobiles/Images/240335_6_ospqym.png/mxw_1440,f_auto",
+  };
+  arr.push(obj);
+  localStorage.setItem("products", JSON.stringify(arr));
 }

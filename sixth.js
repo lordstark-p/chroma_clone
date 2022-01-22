@@ -48,16 +48,17 @@ function imgSlide5() {
     );
 }
 
-var arr =  JSON.parse(localStorage.getItem("products")) || [] ;
-function addingItem(){
-  console.log("here")
+var arr = JSON.parse(localStorage.getItem("products")) || [];
+function addingItem() {
+  console.log("here");
 
   var obj = {
-     title :"pTron Bassbuds Pixel In-Ear Truly Wireless Earbuds",
-     id:"229945",
-     price:"₹1,399.00",
-     image:"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1642154674/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/247450_2_rjakq1.png/mxw_1440,f_auto"
-}
-arr.push(obj);
-localStorage.setItem("products",JSON.stringify(arr));
+    title: "pTron Bassbuds Pixel In-Ear Truly Wireless Earbuds",
+    id: "229945",
+    price: 1399.0,
+    image:
+      "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1642154674/Croma%20Assets/Entertainment/Wireless%20Earbuds/Images/247450_2_rjakq1.png/mxw_1440,f_auto",
+  };
+  arr.push(obj);
+  localStorage.setItem("products", JSON.stringify(arr));
 }
