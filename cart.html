@@ -12,8 +12,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
   </head>
   <body>
+    <div id="container"></div>
     <main>
       <div id="mainCon">
         <div id="headBar" class="flex">
@@ -98,6 +101,30 @@
         <a href="/index.html" id="emTree">EXPLORE NOW</a>
       </div>
     </main>
+    <div id="szcontainer"></div>
   </body>
   <script src="/js/cart.js"></script>
 </html>
+<!-- navbar -->
+<script type="module" >
+ 
+  import navbar from './components/navbar.js';
+ 
+//  console.log("navbar:",navbar)
+ 
+   let container = document.getElementById('container')
+ container.innerHTML = navbar();
+ 
+
+ </script>
+ <!-- footer -->
+ <script type="module">
+
+  import footer from './components/footer.js';
+  
+  // console.log("footer:",footer)
+  
+  let container = document.getElementById('szcontainer')
+  container.innerHTML = footer();
+  
+  </script>

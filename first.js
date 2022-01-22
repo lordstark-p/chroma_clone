@@ -18,6 +18,7 @@ function imgSlide2() {
     );
 }
 
+
 document.getElementById("gvthumb3gv").addEventListener("click", imgSlide3);
 function imgSlide3() {
   document
@@ -49,6 +50,8 @@ function imgSlide5() {
 }
 
 var arr =  JSON.parse(localStorage.getItem("products")) || [] ;
+// document.getElementById("gvcart").innerText = arr.length;
+
 function addingItem(){
   console.log("here")
 
@@ -60,4 +63,6 @@ function addingItem(){
 }
 arr.push(obj);
 localStorage.setItem("products",JSON.stringify(arr));
+
 }
+

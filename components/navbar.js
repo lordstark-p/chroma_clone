@@ -545,7 +545,9 @@ function navbar()
       </div>
 
       <div id="szcart">
-        <i class="fas fa-shopping-cart"></i>
+      <a href="cart.html">  <i class="fas fa-shopping-cart"></i></a>
+      
+       
         <button>CART</button>
 
       </div>

@@ -9,6 +9,7 @@ body {
   #gvmainBox {
     width: 100%;
     /* border: 1px solid red; */
+    margin-top: 12%;
   }
   #gvupperBox {
     margin: 0 auto;
