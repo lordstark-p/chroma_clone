@@ -62,4 +62,11 @@ function addingItem() {
   };
   arr.push(obj);
   localStorage.setItem("products", JSON.stringify(arr));
+  window.location.href = "fifth.html"
 }
+
+function chgCart() {
+  document.querySelector("#cartValu").innerHTML = arr.length;
+}
+
+chgCart();

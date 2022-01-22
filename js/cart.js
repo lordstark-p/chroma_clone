@@ -46,7 +46,12 @@ function delCart(noman) {
 
   localStorage.setItem("products", JSON.stringify(testData));
 }
+function chgCart() {
+  document.querySelector("#cartValu").innerHTML = testData.length;
+}
 function cartChange() {
+  chgCart();
+
   if (testData.length == 0) {
     mainCon.classList.add("off");
     emCart.classList.remove("off");

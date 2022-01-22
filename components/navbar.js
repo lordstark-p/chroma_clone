@@ -529,15 +529,17 @@ function navbar() {
         </div>
 
       </div>
-
+      
       <div id="szorder">
+      <a href="order.html">  </a>
         <button>ORDERS </button>
       </div>
+      </a>
       <a href="signin.html" id = "gvddButton"> 
       <div id="szsign">
         <button > SIGN IN</button>
       </div>
-      </a>
+     
       <div id="szhr">
         <hr>
       </div>

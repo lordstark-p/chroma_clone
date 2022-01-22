@@ -49,7 +49,6 @@ function imgSlide5() {
 }
 
 var arr = JSON.parse(localStorage.getItem("products")) || [];
-// document.getElementById("gvcart").innerText = arr.length;
 
 function addingItem() {
   console.log("here");
@@ -59,8 +58,15 @@ function addingItem() {
     id: "229941",
     price: 58990.0,
     image:
-      "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605263642/Croma%20Assets/Communication/Mobiles/Images/8999511228446.png/mxw_1440,f_auto",
+    "https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605263642/Croma%20Assets/Communication/Mobiles/Images/8999511228446.png/mxw_1440,f_auto",
   };
+  // window.location.href = "first.html"
   arr.push(obj);
+  chgCart();
   localStorage.setItem("products", JSON.stringify(arr));
 }
+    function chgCart() {
+      document.querySelector("#cartValu").innerHTML = arr.length;
+    }
+
+    chgCart();
