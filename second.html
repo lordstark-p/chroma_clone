@@ -1779,8 +1779,9 @@
    let container = document.getElementById('container')
  container.innerHTML = navbar();
  
+ var products = JSON.parse(localStorage.getItem("products")) || [];
  function chgCart() {
-      document.querySelector("#cartValu").innerHTML = arr.length;
+      document.querySelector("#cartValu").innerHTML = products.length;
     }
 
     chgCart();

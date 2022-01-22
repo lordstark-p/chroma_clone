@@ -24,8 +24,9 @@ let  addingRau = () => {
      id:Math.floor(Math.random(12000 -500)*500)
   }
   arr.push(newObj);
+  chgCart();
   localStorage.setItem("products",JSON.stringify(arr));
- 
+  // window.location.href = "mobile.html";
 }
 
 let  addingRau1 = () => {
@@ -37,8 +38,9 @@ let  addingRau1 = () => {
      id:Math.floor(Math.random(12000 -500)*500)
   }
   arr.push(newObj);
+  chgCart();
   localStorage.setItem("products",JSON.stringify(arr));
-  console.log('title:', newObj)
+  // window.location.href = "mobile.html";
 }
 
 let  addingRau2 = () => {
@@ -50,8 +52,9 @@ let  addingRau2 = () => {
      id:Math.floor(Math.random(12000 -500)*500)
   }
   arr.push(newObj);
+  chgCart();
   localStorage.setItem("products",JSON.stringify(arr));
-  console.log('title:', newObj)
+  // window.location.href = "mobile.html";
 }
 let  addingRau3 = () => {
   console.log("here")
@@ -62,8 +65,9 @@ let  addingRau3 = () => {
      id:Math.floor(Math.random(12000 -500)*500)
   }
   arr.push(newObj);
+  chgCart();
   localStorage.setItem("products",JSON.stringify(arr));
-  console.log('title:', newObj)
+  // window.location.href = "mobile.html";
 }
 let  addingRau4 = () => {
   console.log("here")
@@ -74,8 +78,9 @@ let  addingRau4 = () => {
      id:Math.floor(Math.random(12000 -500)*500)
   }
   arr.push(newObj);
+  chgCart();
   localStorage.setItem("products",JSON.stringify(arr));
-  window.location.href = "mobile.html";
+  // window.location.href = "mobile.html";
 }
 function chgCart() {
   document.querySelector("#cartValu").innerHTML = arr.length;
