@@ -520,7 +520,7 @@ function navbar() {
 
       <div id="szsearch">
         <div id="szframe">
-          <input id="input" type="text" placeholder="What are you looking for ?" />
+          <input id="input" type="text" placeholder="Only Mobile phone and Mac book available" />
 
 
           <div id="szsearch-btn">
