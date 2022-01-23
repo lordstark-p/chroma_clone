@@ -531,18 +531,18 @@ function navbar() {
       </div>
       
       <div id="szorder">
-      <a href="order.html">  </a>
-        <button>ORDERS </button>
-      </div>
-      </a>
-      <a href="signin.html" id = "gvddButton"> 
-      <div id="szsign">
-        <button > SIGN IN</button>
+    
+        <button id = "gvddButton">ORDERS </button>
       </div>
      
-      <div id="szhr">
-        <hr>
+      
+      <a href="signin.html">
+      <div id="szsign">
+        <button  > SIGN IN</button>
       </div>
+      </a>
+      
+     
       <a href="cart.html" style="color: white;
     text-decoration: none;"> 
       <div id="szcart">
