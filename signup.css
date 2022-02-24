@@ -49,13 +49,15 @@ label {
     
 }
 
-#mobile {
+#mobile, #name, #email, #password {
     color:white;
     padding:5px;
     font-size: 18px;
     background-color: transparent;
-    border:transparent;
-    width:300px
+    /* border:transparent; */
+    width:300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 #hr {
     border: 1px solid;
@@ -97,7 +99,7 @@ a{
 }
 
 
-#mobile:focus {
+#mobile:focus, #name:focus, #email:focus, #password:focus {
     outline: none
 }
 
@@ -150,7 +152,7 @@ a{
         padding: 40px 20px;
     }
      
-    #mobile {
+    #mobile,#name, #email, #password {
         width:80%
     }
     label{

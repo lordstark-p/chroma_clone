@@ -56,13 +56,15 @@ label {
 }
 
 
-#input,#mobile  {
+#userId,#password  {
     color:white;
     padding:5px;
     font-size: 18px;
     background-color: transparent;
-    border:none;
+    /* border:none; */
     width:300px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     
 }
 #input:focus {
@@ -106,7 +108,7 @@ p {
     margin-bottom: 50px;
 }
 
-#mobile:focus {
+#userId:focus,#password:focus {
     outline: none
 }
 

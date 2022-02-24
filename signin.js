@@ -1,9 +1,10 @@
 let data = JSON.parse(localStorage.getItem("cromaUserData"))
 
-    document.getElementById("input").addEventListener("keypress", showAlert)
-    let show = document.getElementById("show");
+    document.getElementById("userId").addEventListener("keypress", showAlert)
+    var show = document.getElementById("show");
     
-    let empty = document.getElementById("empty");
+    var empty = document.getElementById("empty");
+    
 
     function showAlert(){
         show.textContent = ""
@@ -12,29 +13,33 @@ let data = JSON.parse(localStorage.getItem("cromaUserData"))
     
     function signIn(){
 
-        let input = document.getElementById("input").value
+        let userId = document.getElementById("userId").value;
+        let password = document.getElementById("password").value;
+
         let otpData = JSON.parse(localStorage.getItem("otpData")) || []
         
         
-        if (input.length > 0 && input.length<10){
-            empty.textContent = ""
-            show.textContent = "Incorrect number,Please enter a 10 digit mobile number or email to receive your OTP"
-        }
-        else if (input.length < 1){
+        // if (userId.length > 0 && userId.length<10){
+        //     empty.textContent = ""
+        //     show.textContent = "Incorrect number,Please enter a 10 digit mobile number or email to receive your OTP"
+        // }
+        // else 
+        console.log(userId.length, password.length)
+        if (userId.length < 1 || password.length < 1){
 
             show.textContent = ""
-            empty.textContent = "This field is required"
+            empty.textContent = "All fields are required"
         }
         else{
             var count  = 0;
 
             for(var i = 0; i<data.length; i++){
-                if(input == data[i].mobile || input == data[i].email){
+                if((userId == data[i].mobile || userId == data[i].email) && (password == data[i].password)){
 
                     let otp = Math.floor(1000 + Math.random()*9000)
 
                     let otp_data = {
-                        mobile:input,
+                        mobile:userId,
                         otp:otp
                     }
 
@@ -50,7 +55,8 @@ let data = JSON.parse(localStorage.getItem("cromaUserData"))
             }
 
             if(count == 0){
-                window.location.href = "./signup.html"
+                alert("Please Enter Correct Email and Password")
+                //window.location.href = "./signup.html"
             }
         }
         

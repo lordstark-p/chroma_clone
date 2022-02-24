@@ -1,4 +1,4 @@
-let input = document.getElementById("otp").value;
+
 
     let btn = document.getElementById("button")
     btn.disabled = true;
@@ -6,9 +6,14 @@ let input = document.getElementById("otp").value;
     let enter = document.getElementById("otp")
      enter.addEventListener("keypress", valid)
 
+     let error = document.getElementById("show")
+
      var count = 0;
      function valid(){
+        var input = document.getElementById("otp").value;
+         console.log(input.length)
         count++
+        error.textContent = ""
         if(count == 4){
             btn.disabled = false;
             btn.style.backgroundColor = "turquoise";
@@ -28,6 +33,7 @@ let input = document.getElementById("otp").value;
     var otpData = JSON.parse(localStorage.getItem("otpData"))
     
     let phone = otpData[otpData.length-1].mobile
+    let otpPin = otpData[otpData.length-1].otp
     
     let a = document.createElement("a");
     a.textContent = phone;
@@ -41,10 +47,7 @@ let input = document.getElementById("otp").value;
 
     //console.log(cromaUsers)
 
-    function otpCheck(){
-        
-        window.location.href = "index.html"
-    }
+    
 
     let otp = Math.floor(1000 + Math.random()*9000)
 
@@ -89,7 +92,19 @@ let input = document.getElementById("otp").value;
         else {
             validMsg.textContent = `Resend in ${i} secs`
         }
-        console.log(i);
+        // console.log(i);
         
         i--;
     }, 1000)
+
+
+    function otpCheck(){
+        // var input = document.getElementById("otp").value;
+        // if(input != otpPin){
+        //     error.textContent = "Please Enter Correct OTP"
+        // }else{
+        //     window.location.href = "index.html"
+        // }
+        window.location.href = "index.html"
+        console.log(input)
+    }
