@@ -52,9 +52,9 @@ var cromaUsers = JSON.parse(localStorage.getItem("cromaUserData")) || []
 
             otpData.push(otp_data)
 
-            alert(`${otp} is your OTP to register with Croma. This OTP is valid for 15 minutes`)
+            alert(`${name} you are registered successfully`)
 
-            window.location.href = "otp.html"
+             window.location.href = "signin.html"
 
 
         }

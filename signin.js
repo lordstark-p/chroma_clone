@@ -45,8 +45,8 @@ let data = JSON.parse(localStorage.getItem("cromaUserData"))
 
                     otpData.push(otp_data)
 
-                    
-                    window.location.href = "./otp.html"
+                    alert(`${data[i].name} you are sign in successfully`)
+                    window.location.href = "./index.html"
 
                     //alert(`${otp} is your OTP to register with Croma. This OTP is valid for 15 minutes`)
 
